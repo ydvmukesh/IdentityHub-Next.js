@@ -16,6 +16,7 @@ interface SocialLink {
   url: string;
   icon: React.ComponentType; // Type for React components
 }
+
 // Footer menu
 export const footerMenu: MenuItem[] = [
   { name: 'Features', href: '/about' },

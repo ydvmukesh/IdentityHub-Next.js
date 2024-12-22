@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { footerMenu, socialLinks } from '@/utils/common'
 import Logo from './Logo'
+
 const Footer = () => {
+
   return (
     <footer className="">
       <div className=" w-full px-4 md:px-8 lg:px-10  mx-auto py-6">
@@ -35,7 +37,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-slate-300 hover:text-gray-50  w-[35px] sm:w-[40px] h-[35px] sm:h-[40px] rounded-full flex  items-center justify-center bg-[#1B1530]  p-2 sm:p-0"
                 >
-                  <link.icon size={17} />  {/* Render the component */}
+                  <link.icon />  {/* Render the component */}
                   <span className="sr-only">{link.name}</span>
                 </Link>
               ))}
