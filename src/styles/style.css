@@ -71,20 +71,20 @@
   border-radius: 32px clamp(60px, 5vw, 70px) 32px 32px;
   z-index: 2;
 }
-.card-box:before {
+.card-shape:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url(/images/nose-background.png);
+}
+.card-shape {
   background: url(/images/card-gradient-bg.svg),
     linear-gradient(#0e0c15, #0e0c15);
   background-blend-mode: color-dodge;
   background-position: 40px;
   z-index: 0;
   position: relative;
-}
-.card-shape {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: url(/images/nose-background.png);
 }
 /* why choose */
 .why-choose {
