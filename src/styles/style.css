@@ -279,4 +279,8 @@
     background-size: contain;
     background-size: 53%;
   }
+  .banner-bg {
+    background-position: center top;
+    background-size: 560px;
+  }
 }
