@@ -277,5 +277,6 @@
   .cta-wrapper::before {
     top: 0;
     background-size: contain;
+    background-size:70%;
   }
 }
