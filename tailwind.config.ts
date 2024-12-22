@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,7 +7,6 @@ export default {
   ],
   theme: {
     extend: {
-      
       container: {
         center: true, 
         padding: '1rem', 
@@ -19,7 +17,6 @@ export default {
           xl: '1140px',
           '2xl': '1320px',
         },
-        
       },
       colors: {
         primary: {

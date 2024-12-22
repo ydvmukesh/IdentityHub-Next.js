@@ -2,7 +2,6 @@ import React from 'react';
 import { FaAnglesDown } from 'react-icons/fa6';
 import { MdOutlineCheck } from 'react-icons/md';
 // import Image from 'next/image';
-
 // Define the types for the feature data
 interface Feature {
     id: number;  // This can be a string if you want, change accordingly
@@ -16,18 +15,14 @@ interface Feature {
     imageSrc: string;
     imageAlt: string;
 }
-
 interface FeatureCardProps {
     features: Feature[];  // The prop should expect an array of Feature objects
 }
-
 const FeatureCard: React.FC<FeatureCardProps> = ({ features }) => {
     return (
         <>
             {features.map((feature) => (
                 <div key={feature.id}>
-
-
                     <div className="flex gap-3 sm:gap-3 xl:gap-4 2xl:gap-5">
                         <div className="relative">
                             <div className="feature-icon">
@@ -83,8 +78,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ features }) => {
                             </ul>
                         </div>
                     </div>
-
-
                     {/* Right side image */}
                     {/* <div className="w-full lg:w-[40%]">
                             <div className="feature-img">
@@ -101,5 +94,4 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ features }) => {
         </>
     );
 }
-
 export default FeatureCard;

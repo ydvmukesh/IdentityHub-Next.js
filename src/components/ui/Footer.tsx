@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import { footerMenu, socialLinks } from '@/utils/common'
 import Logo from './Logo'
-
-
 const Footer = () => {
   return (
     <footer className="">
@@ -48,6 +46,4 @@ const Footer = () => {
     </footer>
   )
 }
-
 export default Footer
-

@@ -7,19 +7,14 @@ import Logo from './Logo'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { IoChevronForward } from 'react-icons/io5'
-
-
-
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
     return (
         <header className="mt-3 sticky top-2 z-50">
             <div className="container">
                 <nav className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 rounded-xl " aria-label="Global">
                     <div className="flex lg:flex-1">
                         <Link href="/" className="-m-1.5 p-1.5">
-
                             <Logo />
                         </Link>
                     </div>
@@ -66,7 +61,6 @@ const Header = () => {
                                 </div>
                                 <div className="py-6">
                                     <Button href='/text' title='Start free trial' icon={<IoChevronForward />} />
-
                                 </div>
                             </div>
                         </div>
@@ -76,18 +70,12 @@ const Header = () => {
         </header>
     )
 }
-
 export default Header
-
 // header navigation component
-
-
-
 interface NavigationProps {
     className?: string; // Optional className prop
 }
 const Navigation: React.FC<NavigationProps> = ({ className = '' }) => {
-
     return (
         <>
             {navigationItems.map((item) => (
@@ -95,7 +83,6 @@ const Navigation: React.FC<NavigationProps> = ({ className = '' }) => {
                     key={item.label}
                     href={item.href}
                     className={`text-sm md:text-base font-normal leading-6 text-gray-300 hover:text-gray-50 ${className}`}
-
                 >
                     {item.label}
                 </Link>
@@ -103,5 +90,3 @@ const Navigation: React.FC<NavigationProps> = ({ className = '' }) => {
         </>
     );
 }
-
-

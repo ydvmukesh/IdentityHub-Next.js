@@ -3,8 +3,6 @@ import CallToAction from "@/components/home/CallToAction";
 import Service from "@/components/home/Service";
 import Testimonial from "@/components/home/Testimonial";
 import WhyChoose from "@/components/home/WhyChoose";
-
-
 export default function Home() {
   return (
     <>
@@ -12,14 +10,11 @@ export default function Home() {
         <Banner />
         <Service />
       </div>
-
       <WhyChoose features={[]} contactData={[]} detailedFeatures={[]} cardInfo={[]} secureFeatures={[]} />
-
       <div className="testimonail-cta-wrapper relative">
         <Testimonial />
         <CallToAction />
       </div>
     </>
-
   );
 }

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-
 interface ButtonProps {
   href?: string;
   className?: string;
@@ -8,7 +7,6 @@ interface ButtonProps {
   icon?: React.ReactNode;  // Optional icon prop
   buttonIcon?: React.ReactNode;
 }
-
 const Button: React.FC<ButtonProps> = ({ href = "#", className = 'btn-primary', title = "Start free trial", icon, ...props }) => {
   return (
     <Link href={href} className={`btn ${className}`} {...props}>
@@ -17,5 +15,4 @@ const Button: React.FC<ButtonProps> = ({ href = "#", className = 'btn-primary', 
     </Link>
   );
 };
-
 export default Button;

@@ -4,7 +4,6 @@ import Button from '../common/Button';
 import Image from 'next/image';
 import BannerImg from '/public/images/productivity.png';
 import ContactCard from '../common/ContactCard';
-
 const Banner = () => {
     return (
         <section className='banner  pb-100  pt-11 md:pt-14 lg:pt-14 xl:pt-20 2xl:pt-[100px]'>
@@ -12,13 +11,11 @@ const Banner = () => {
                 <div className="lg:max-w-[992px] xl:mt-[85px] 2xl:mt-[78px] mx-auto lg:px-[67px]">
                     <SubTitle subTitle="Secure your data" />
                     <div className="flex flex-col gap-3 md:gap-5 lg:gap-7">
-
                         <div className="section-head  mx-auto">
                             <h1 className='section-title  section-title-gredient text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl font-semibold'>
                                 <span className='block'>Identity-hub is a better way </span> to achieve<span className='line-large'> privacy</span>
                             </h1>
                         </div>
-
                         <p className='text-lg lg:text-xl 2xl:text-2xl max-w-[807px] mx-auto text-center'>
                             Make your data invisible by generating unlimited identities. The next-level in privacy protection for online and travel.
                         </p>
@@ -34,7 +31,6 @@ const Banner = () => {
                         </div>
                         <div className="flex-1 order-1 sm:order-1">
                             <Image src={BannerImg} alt='bannerimg' width={486} height={437} className='mx-auto' />
-
                         </div>
                         <div className='flex  s-flex-col lg:flex-col justify-between gap-1 sm:gap-3 order-3 sm:order-0'>
                             <ContactCard subTitle='Phone numbers' href='tel:+1456453-3456' title='+1 (456) 453-3456' image='images/phone.svg' />
@@ -46,8 +42,4 @@ const Banner = () => {
         </section>
     );
 }
-
 export default Banner;
-
-
-

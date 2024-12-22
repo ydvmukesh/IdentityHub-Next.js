@@ -5,7 +5,6 @@ import Slider from 'react-slick'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
 interface Testimonial {
   id: string | number;
   name: string;
@@ -14,23 +13,19 @@ interface Testimonial {
   content: string;
   image: string;
 }
-
 interface TestimonialSliderProps {
   testimonials: Testimonial[];
 }
-
 export default function TestimonialSlider({ testimonials }: TestimonialSliderProps) {
   const sliderRef = useRef<Slider>(null)
   interface ArrowProps {
     onClick: () => void;
   }
-  
   const CustomNextArrow = ({ onClick }: ArrowProps) => (
     <div className="slick-next" onClick={onClick}>
       <FaChevronRight className="text-white text-lg" />
     </div>
   );
-  
   const CustomPrevArrow = ({ onClick }: ArrowProps) => (
     <div className="slick-prev" onClick={onClick}>
       <FaChevronLeft className="text-white text-lg" />
@@ -47,12 +42,11 @@ export default function TestimonialSlider({ testimonials }: TestimonialSliderPro
     pauseOnHover: true,
     dotsClass: "slick-dots custom-dots",
     nextArrow: <CustomNextArrow onClick={function (): void {
-        throw new Error('Function not implemented.')
-    } } />, // Use the custom arrow component
+      throw new Error('Function not implemented.')
+    }} />, // Use the custom arrow component
     prevArrow: <CustomPrevArrow onClick={function (): void {
-        throw new Error('Function not implemented.')
-    } } />, // Use the custom previous arrow component
-
+      throw new Error('Function not implemented.')
+    }} />, // Use the custom previous arrow component
     responsive: [
       {
         breakpoint: 1024,
@@ -69,10 +63,7 @@ export default function TestimonialSlider({ testimonials }: TestimonialSliderPro
         },
       },
     ],
-
-
   }
-
   return (
     <div className="container px-0 sm:px-4">
       <div className="testimonial-slider-container p-3 sm:p-4 md:p-7 xl:p-8 2xl:p-10 rounded-[20px] sm:mx-4 bg-gray-800">
@@ -108,4 +99,3 @@ export default function TestimonialSlider({ testimonials }: TestimonialSliderPro
     </div>
   )
 }
-

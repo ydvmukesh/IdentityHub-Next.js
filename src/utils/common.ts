@@ -1,25 +1,21 @@
 import { FaTwitter, FaFacebookF, FaTelegramPlane } from 'react-icons/fa';
 import { RiInstagramFill } from "react-icons/ri";
-
 // Define the structure for menu items
 interface MenuItem {
   name: string;
   href: string;
 }
-
 // Define the structure for navigation items
 interface NavigationItem {
   href: string;
   label: string;
 }
-
 // Define the structure for social links
 interface SocialLink {
   name: string;
   url: string;
   icon: React.ComponentType; // Type for React components
 }
-
 // Footer menu
 export const footerMenu: MenuItem[] = [
   { name: 'Features', href: '/about' },
@@ -27,7 +23,6 @@ export const footerMenu: MenuItem[] = [
   { name: 'Pricing', href: '/contact' },
   { name: 'How to Use', href: '/blog' },
 ];
-
 // Navigation items
 export const navigationItems: NavigationItem[] = [
   { href: '#', label: 'Home' },
@@ -36,7 +31,6 @@ export const navigationItems: NavigationItem[] = [
   { href: '#', label: 'Partners' },
   { href: '#', label: 'About Us' },
 ];
-
 // Social links
 export const socialLinks: SocialLink[] = [
   {

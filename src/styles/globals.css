@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
   font-family: "Aeonik Regular";
   src: url("https://db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.eot");
@@ -16,7 +15,6 @@
     url("https://db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.svg#Aeonik Regular")
       format("svg");
 }
-
 @font-face {
   font-family: "Aeonik Medium";
   src: url("https://db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.eot");
@@ -31,7 +29,6 @@
     url("https://db.onlinewebfonts.com/t/757ff6da05e4f945c71c9751b485a9ad.svg#Aeonik Medium")
       format("svg");
 }
-
 @layer base {
   :root {
     --background: #0e0c15;
@@ -45,14 +42,12 @@
     padding: 0;
     box-sizing: border-box;
   }
-
   body {
     background: #0e0c15;
     color: var(--foreground);
     font-family: "Sora", serif;
     position: relative;
   }
-
   body::before {
     content: "";
     background: url(/images/background.svg);
@@ -62,7 +57,6 @@
     inset: 0;
     z-index: -1;
   }
-
   h2,
   h3,
   h4,
@@ -70,27 +64,22 @@
   h6 {
     color: var(--text-color);
   }
-
   p {
     color: var(--text-color);
     font-weight: 400;
     font-family: var(--aeonik-regular);
   }
-
   .aeonik-regular {
     font-family: var(--aeonik-regular);
   }
-
   .aeonik-md {
     font-family: var(--aeonik-md);
   }
 }
-
 @layer components {
   .btn {
     @apply inline-flex items-center gap-1 text-gray-300 hover:text-white py-2 px-4 md:px-6 font-normal transition ease-in-out duration-300 focus:outline-none text-sm md:text-base rounded-xl;
   }
-
   .btn-primary {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -103,7 +92,6 @@
     box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2) inset;
     backdrop-filter: blur(24px);
   }
-
   .btn-secondary {
     border: 1px solid var(--secondary);
     background: linear-gradient(
@@ -113,7 +101,6 @@
     );
     backdrop-filter: blur(2px);
   }
-
   .subtile-title {
     @apply inline-flex py-1 px-3 xl:px-4 items-center gap-1 text-sm rounded-full text-gray-300 cursor-pointer;
     background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9))
@@ -125,11 +112,9 @@
     box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.2) inset,
       0px 4px 50px 0px rgba(159, 100, 239, 0.4);
   }
-
   .section-title {
     @apply text-2xl md:text-4xl lg:text-[40px] leading-[120%] text-slate-300 font-semibold;
   }
-
   .contact-card-icon {
     @apply w-8  md:w-10 2xl:w-11 h-8  md:h-10 2xl:h-11;
     flex-grow: 0;
@@ -137,28 +122,22 @@
     background: rgba(255, 255, 255, 0.07);
     box-shadow: 0px 0px 0px 1px #2d2e48;
   }
-
   .descritpion {
     @apply text-base md:text-xl lg:text-2xl;
     line-height: 120%;
   }
-
   .pt-90 {
     @apply pt-12 md:pt-14 lg:pt-16 xl:pt-20 2xl:pt-[90px];
   }
-
   .pt-100 {
     @apply pt-12 md:pt-14 lg:pt-16 xl:pt-20 2xl:pt-[100px];
   }
-
   .pb-100 {
     @apply pb-12 md:pb-14 lg:pb-16 xl:pb-20 2xl:pb-[100px];
   }
-
   .pt-200 {
     @apply pt-12 md:pt-14 lg:pt-16 xl:pt-20 2xl:pt-[200px];
   }
-
   .pb-200 {
     @apply pb-12 md:pb-14 lg:pb-16 xl:pb-20 2xl:pb-[200px];
   }
@@ -174,11 +153,9 @@
   .check-icon svg {
     @apply h-[12px] md:h-[16px];
   }
-
   .section-head {
     @apply flex items-center justify-center flex-col text-center;
   }
-
   .feature-card {
     @apply py-4 px-3  sm:p-5 md:p-8 2xl:p-10 rounded-2xl lg:rounded-[20px];
     border: 1.2px solid #101132;
@@ -189,10 +166,7 @@
     );
     backdrop-filter: blur(8px);
   }
-
-  
 }
-
 @layer utilities {
   .section-title-gredient {
     background: rgb(243, 60, 192);
@@ -200,7 +174,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .text-gradient {
     background: linear-gradient(
       87deg,
@@ -211,26 +184,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .section-title .line-large {
     background: url(/images/line-large.svg) no-repeat bottom center / contain;
     padding-bottom: clamp(10px, 2vw, 20px);
   }
-
   .section-title-gredient .line-large {
     padding-bottom: clamp(5px, 1vw, 10px);
   }
   header nav a {
     font-family: var(--aeonik-regular);
   }
-  
   header nav {
     -webkit-backdrop-filter: blur(34px);
     backdrop-filter: blur(34px);
     border: solid 1px rgba(255, 255, 255, 0.1);
     background-color: rgba(15, 12, 23, 0.14);
   }
-  
   @media (max-width: 375px) {
     .xs-flex-col {
       flex-direction: column;
@@ -246,4 +215,3 @@
     }
   }
 }
-

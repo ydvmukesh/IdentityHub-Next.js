@@ -1,7 +1,6 @@
 import React from 'react'
 import Title from '../common/Title'
 import Button from '../common/Button'
-
 const CallToAction = () => {
   return (
     <section className='cta-wrapper mt-100 relative'> <div className="container text-center">
@@ -17,5 +16,4 @@ const CallToAction = () => {
     </section>
   )
 }
-
 export default CallToAction

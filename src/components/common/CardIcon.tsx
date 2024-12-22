@@ -2,8 +2,6 @@ import React from 'react';
 import Button from './Button';
 import { IoCaretForwardOutline } from 'react-icons/io5';
 import Image from 'next/image';
-
-
 interface CardIconProps {
   title?: string;
   description?: string;
@@ -40,5 +38,4 @@ const CardIcon: React.FC<CardIconProps> = ({
     </div>
   );
 }
-
 export default CardIcon;

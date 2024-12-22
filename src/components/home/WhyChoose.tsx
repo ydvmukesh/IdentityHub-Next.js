@@ -16,21 +16,18 @@ interface Feature {
     imageAlt: string;
     content: { id: number; text: string; }[];
 }
-
 interface ContactData {
     subTitle: string;
     href?: string;
     title: string;
     image: string;
 }
-
 interface CardInfo {
     subTitle: string;
     href?: string;
     title: string;
     image: string;
 }
-
 interface SecureFeature {
     id: number;
     title: string;
@@ -43,9 +40,7 @@ interface SecureFeature {
     content: { id: number; text: string; }[];
     cardInfo: { id: number; text: string; }[];
     style?: React.CSSProperties;
-
 }
-
 interface WhyChooseProps {
     features: Feature[];
     contactData: ContactData[];
@@ -53,23 +48,17 @@ interface WhyChooseProps {
     detailedFeatures: Feature[];
     secureFeatures: SecureFeature[];
 }
-
 const WhyChoose: React.FC<WhyChooseProps> = () => {
-
-
     return (
         <section className='mt-200 why-choose'>
             <div className="container">
                 <SubTitle subTitle="Features" />
-
                 <Title
                     title='Why <span class="inline-block text-gradient">choose</span> us'
                     className="text-center block "
                     description="We are the only service that provides all 3 services as a packaged service"
                 />
                 <div className="flex flex-col  gap-5 md:gap-7 lg:gap-8 2xl:gap-10">
-
-
                     <div className="feature-card ">
                         <div className="flex flex-wrap gap-y-5 lg:gap-1  xl:gap-2 2xl:gap-4 justify-between items-center">
                             <div className="w-full lg:w-[49%] lgw-[55%]">
@@ -107,7 +96,6 @@ const WhyChoose: React.FC<WhyChooseProps> = () => {
                                         />
                                     ))}
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -127,14 +115,11 @@ const WhyChoose: React.FC<WhyChooseProps> = () => {
                                                 href={card.href} // Now correctly accessing href from cardInfo
                                                 title={card.title}
                                                 image={card.image}
-
-
                                             />
                                         ))
                                     ))}
                                 </div>
                                 <div className="feature-img text-center">
-
                                     {/* Access the first object in the featureSecure array */}
                                     {featureSecure.length > 0 && (
                                         <Image
@@ -143,7 +128,6 @@ const WhyChoose: React.FC<WhyChooseProps> = () => {
                                             width={357}
                                             height={357}
                                             className='mx-auto lg:mr-0  lg:ml-auto lg:max-w-[70%] xl:max-w-full'
-
                                         />
                                     )}
                                 </div>
@@ -151,14 +135,8 @@ const WhyChoose: React.FC<WhyChooseProps> = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     )
 }
-
-
 export default WhyChoose
-
-
-

@@ -3,9 +3,7 @@ import Title from "../common/Title";
 import CardIcon from "../common/CardIcon";
 import { cardData } from "@/utils/data"; // Import the card data from data.ts
 import SubTitle from '../common/SubTitle';
-
 const Service = () => {
-
   return (
     <div className="service lg:pt-[160px]">
       <SubTitle subTitle="Services" />
@@ -30,5 +28,4 @@ const Service = () => {
     </div>
   );
 };
-
 export default Service;

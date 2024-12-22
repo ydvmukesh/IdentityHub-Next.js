@@ -3,8 +3,6 @@ import SubTitle from '../common/SubTitle'
 import TestimonialSlider from '../common/TestimonialSlider'
 import Title from '../common/Title'
 import { testimonials } from '@/utils/data' // Assuming your featureData is stored here
-
-
 const Testimonial = () => {
     return (
         <>
@@ -21,5 +19,4 @@ const Testimonial = () => {
         </>
     )
 }
-
 export default Testimonial

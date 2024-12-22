@@ -1,6 +1,4 @@
-
 // service card data
-
 export const cardData = [
   {
     title: "Personal Information removal",
@@ -27,11 +25,8 @@ export const cardData = [
     icon: "/images/personal-icon.svg",
   },
 ];
-
-
 //  why choose data
 export const featureData = [
- 
   {
         id: 1,
         title: "Protect Personal Information",
@@ -62,9 +57,7 @@ export const featureData = [
       },
   // More features
 ];
-
 // data.ts
-
 export const featurecontactData = [
   {
     subTitle: 'Username',
@@ -76,27 +69,23 @@ export const featurecontactData = [
     href: 'tel:+1456453-3456',
     title: '+1 (456) 453-3456',
     image: 'images/phone.svg', 
-
   },
   {
     subTitle: 'Email address',
     href: 'mailto:davidjx@gmail.com',
     title: 'davidjx@gmail.com',
     image: 'images/phone.svg', 
-    
   },
   {
     subTitle: 'Password',
     title: 'Kas3345-r32',
     image: 'images/password.svg', 
-
   },
   {
     subTitle: 'Credit card',
     title: '123 456 789 1243',
     image: 'images/credit-card.svg', 
   },
- 
   {
     subTitle: 'Email address',
     href: 'mailto:davidjx@gmail.com',
@@ -104,9 +93,7 @@ export const featurecontactData = [
     image: 'images/mail-open.svg', 
   },
 ];
-
 export const featureDetailed = [
- 
   {
         id: 1,
         title: "Detailed Reporting",
@@ -134,12 +121,10 @@ export const featureDetailed = [
             text: "Use a secure VPN to protect your online activities.",
           },
         ],
-       
       },
   // More features
 ];
 export const featureSecure = [
- 
   {
         id: 1,
         title: "Secure All Data",
@@ -173,23 +158,17 @@ export const featureSecure = [
             href: 'mailto:nija@gmail.com',
             title: 'nija@gmail.com',
             image: 'images/mail-01.svg', 
-        
           },
           {
             subTitle: 'Username',
             title: 'tufayel nija',
             image: '/images/user.svg', 
           },
-         
         ]
       },
   // More features
 ];
-
-
 // testimonail
-
-
 export const testimonials = [
   {
       id: 1,

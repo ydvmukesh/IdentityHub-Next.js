@@ -9,7 +9,6 @@ interface CardProps {
     title: string;
     image?: string; // Optional image prop
     style?: React.CSSProperties;
-
 }
 const ContactCard: React.FC<CardProps> = ({ href, subTitle, title, image, className = '', widthHeight = '' }) => {
     return (
@@ -27,16 +26,9 @@ const ContactCard: React.FC<CardProps> = ({ href, subTitle, title, image, classN
                     ) : (
                         <p className='text-xs sm:text-base text-slate-300'>{title}</p>
                     )}
-
                 </div>
             </div>
         </>
     )
 }
-
 export default ContactCard
-
-
-
-
-
