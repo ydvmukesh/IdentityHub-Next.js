@@ -70,7 +70,7 @@ export default function TestimonialSlider({ testimonials }: TestimonialSliderPro
         <Slider ref={sliderRef} {...settings} className="testimonial-slider px-3 md:px-5 2xl:px-6 py-3 md:py-5 2xl:py-6    rounded-xl xl:rounded-2xl 2xl:rounded-[20px] bg-gray-700">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id}>
-              <div className="testimonial-item ">
+              <div className="testimonial-item ml-2">
                 <div className="flex items-start flex-wrap flex-col sm:flex-row gap-3 xl:gap-6">
                   <div className="shrink-0 w-10 h-10 2xl:w-11 2xl:h-11 overflow-hidden rounded-full border border-white">
                     <Image
