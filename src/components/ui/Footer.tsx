@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="border-t border-gray-800  pt-4  lg:pt-6 xl:pt-8">
           <div className="flex flex-col-reverse  sm:flex-row justify-between items-center">
             <div className="mt-3 md:mt-0 text-slate-300 text-xs sm:text-sm">
-              © {new Date().getFullYear()} Your Company. All rights reserved.
+              © identityhub {new Date().getFullYear()}. All rights reserved.
             </div>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
