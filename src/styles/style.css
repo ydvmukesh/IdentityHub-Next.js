@@ -90,7 +90,7 @@
 .why-choose {
   background-image: url(/images/why-choose-circle.svg);
   background-repeat: no-repeat;
-  background-position: center 20 %;
+  background-position: center 20%;
   position: relative;
 }
 .why-choose::before {
